@@ -1,0 +1,10 @@
+.cards{
+    display: grid;
+    grid-template-columns: repeat(3,2fr);
+}
+
+.main-layout{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    
+}
