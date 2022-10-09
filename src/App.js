@@ -2,8 +2,8 @@
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import './App.css';
 import Card from './component/card/Card';
+import { CardsAndItemsLoader } from './component/cardsAndItemsLoader/cardsAndItemsLoader';
 import OrderPage from './component/OrderPage/OrderPage';
-import Shop from './component/shop/shop';
 import MainLayout from './mainLayout/mainLayout';
 
 function App() {
@@ -20,6 +20,7 @@ function App() {
         },
         {
           path:'/orderPage',
+          loader: CardsAndItemsLoader, //now we are loading data from the 'LoaderFunction' function 
           element:<OrderPage></OrderPage>
         }
       ]
